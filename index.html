@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+    <script> if (typeof (Proxy) === 'undefined') alert('The browser is not supported, please use chrome or firefox');</script>
+</head>
+
+<body>
+	<div class="header" style="width: 100%;">
+	    <div class="name" style="color: rgb(223, 56, 101); font-family: fantasy;text-align: center;background: linear-gradient(to right, hsl(200, 100%, 50%), hsl(175, 100%, 50%));">Sorting Algorithms Visualizer
+	    <div id ="two">
+            
+        <div class="box">
+          <ul>
+            <li class="item-1">Bubble</li>
+            <li class="item-2">Selection</li>
+            <li class="item-3">Insertion</li>
+            <li class="item-4">Merge</li>
+            <li class="item-5">Quick</li>
+            <li class="item-6">Heap</li>
+            
+          </ul>  
+        </div>
+        <p>sort</p>
+        </div>
+	    </div>
+    </div><br><hr>
+        
+	    <div class="section2 group2 array-inputs" style="color: white;">
+
+	        <div class="col2 span_1_of_3" style=" text-align: center;">
+	            <h3 style="font-weight:bold; color: rgb(238, 127, 8)">Size of the array 📊:</h3>
+	            <input id="a_size" type="range" min=10 max=80 step=1 value=20 style="width: 60%">
+	        </div>
+
+	        <div class="col2 span_1_of_3" style=" text-align: center; vertical-align: center">
+	            <button id="a_generate" class="btn_Gene" style="width: 100%;color: rgb(29, 32, 26); background-color: rgb(41, 189, 218)">Generate New Array 📊</button>
+	        </div>
+            
+            
+
+	        <div class="col2 span_1_of_3" style=" text-align: center;">
+	            <h3 style="font-weight:bold; color: rgb(238, 127, 8)">Speed of the algorithm:</h3>
+	            <input id="a_speed" type="range" min=1 max=5 step=0.1 value=1 style="width: 60%">
+	        </div>
+
+	    </div>
+    	<br>
+	</div>
+	 
+    <div class="main" style="position: static;">
+        <div class="option">
+            <div class="row wrapper algos">
+            	<button>Bubble</button>
+                <button>Selection</button>
+                <button>Insertion</button>
+                <button>Merge</button>
+                <button>Quick</button>
+                <button>Heap</button>
+                
+                
+            </div>
+        </div>
+
+        <section >
+
+            <div id="Info_Cont1">
+                
+            </div>
+
+            <div id="array_container">
+                
+            </div>
+
+            <div id="Info_Cont2">
+                
+            </div>
+
+        </section>
+        
+    </div>
+    <div><h5 id="cp">Manidhar Reddy ®</h5></div>
+    <script src="./scripts/main.js"></script>   
+    <script src="./scripts/visualizations.js"></script> 
+
+    <script src="./scripts/bubble_sort.js"></script>
+    <script src="./scripts/selection_sort.js"></script>
+    <script src="./scripts/insertion_sort.js"></script>
+    <script src="./scripts/merge_sort.js"></script>
+    <script src="./scripts/quick_sort.js"></script>
+    <script src="./scripts/heap_sort.js"></script>
+
+    <!-- Adding last line -->
+</body>
+
+</html>
